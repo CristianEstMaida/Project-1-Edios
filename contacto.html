@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   <hearder class="header">
+    <header class="header">
 
         <a href="index.html"><img src="img/logo_carlos2.1..png"alt="logo_carlos" class="logo"></a>
                      
@@ -21,14 +21,47 @@
             </ul>
             
         </nav>
-    </hearder> 
-<main>
-    <div class="construccion">
-        <H1>Disculpa!, estamos en construcción</H1>
-    </div>
-</main>
+    </header> 
     
+    <main class="construccion">
+        <form >
+            <label for="nombres y apellidos">Nombre y Apellido</label>
+            <input type="text" id="nombres y apellidos" class="input-principal" required>
+
+            <label for="correo electronico">Correo Electrónico</label>
+            <input type="email" id="correo electronico" class="input-principal" required placeholder="email@dominio.com">
+
+            <label for="telefono">Teléfono de contacto</label>
+            <input type="tel" id="telefono" class="input-principal" required placeholder="(xx) xxxxxxxx">
+            
+            <label for="mensaje"></label>
+            <textarea name="" id="mensaje" cols="70" rows="10" class="input-principal"></textarea>
+
+            <fieldset class="medios_contacto">
+                <legend>¿Cómo le gustaría que lo contactaramos?</legend>
+                <label for="radio-email"><input type="radio" name="contacto" value="Email" id="radio-email">Email</label>             
+                <label for="radio-telefono"><input type="radio" name="contacto" value="Teléfono" id="radio-telefono">Teléfono</label>
+                <label for="radio-WhatsApp"><input type="radio" name="contacto" value="WhatsApp" id="radio-WhatsAap" checked>WhatsApp</label>
+            </fieldset>
+            <fieldset class="horario_contacto">
+                <legend>¿En cuál horario prefiere ser atendido?</legend>
+                <select>
+                    <option>Seleccione una opción</option>
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                </select>
+            </fieldset>
+        </form>
+        
+        <input type="submit" value="Enviar" class="boton_enviar">
+        
+
+
+    </main>
     
-    
+    <footer class="finpag">
+        <p>Edios Latam</p>
+    </footer>     
 </body>
 </html>

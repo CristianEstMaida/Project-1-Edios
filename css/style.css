@@ -36,6 +36,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    
 }
 
 .header {
@@ -200,4 +202,61 @@ a {
     font-size: 1.8rem;
     font-weight: bold;
     height: 9rem;
+}
+
+/* estilos para contactos */
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+
+}
+@media (max-width:640px) {
+    .construccion {
+        display: flex;
+        margin: 120px 20px;
+    }
+    .boton_enviar {
+        margin:auto 0; 
+    }
+    .horario_contacto {
+        margin-bottom: 40px;
+    }
+ }
+
+.input-principal{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.medios_contacto {
+    margin: 30px 0;
+    border: none;
+    padding: 0;
+}
+.horario_contacto {
+    margin-top: 30px;
+    border: none;
+    padding: 0;
+}
+.boton_enviar {
+    width: 30%;
+    margin: 30px 0;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #f3a305;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    transition: 1s all;
+    cursor: pointer ;
+
+}
+.boton_enviar:hover {
+    background-color: rgb(3, 159, 89);
+    transform: scale(1.1);
 }
